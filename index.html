@@ -4,40 +4,41 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Deep Learning Weekly</title>
 <style>
-body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;max-width:800px;margin:0 auto;padding:20px;background:#f4f4f9;color:#333}
-header{border-bottom:2px solid #333;padding-bottom:10px;margin-bottom:20px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#333;max-width:800px;margin:0 auto;padding:20px;background:#f4f7f6}
+header{border-bottom:2px solid #2c3e50;margin-bottom:30px;padding-bottom:10px}
+h1{color:#2c3e50;margin:0}
 article{background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.1);margin-bottom:20px}
-h1{margin:0;color:#1a1a1a}
-h2{color:#0056b3;margin-top:0}
-footer{text-align:center;font-size:0.8em;color:#777;margin-top:40px}
+h2{color:#e67e22;margin-top:0}
+footer{text-align:center;font-size:0.9em;color:#7f8c8d;margin-top:40px}
+@media(max-width:600px){body{padding:10px}}
 </style>
 </head>
 <body>
-<header><h1>Deep Learning Weekly</h1></header>
+<header><h1>Deep Learning Weekly</h1><p>The pulse of AI innovation</p></header>
 <main>
 <article>
-<h2>FAMU & Sandia National Labs: AI-Quantum Synergy</h2>
-<p>A significant research extension has been announced between Florida A&M University (FAMU) and Sandia National Laboratories. This collaboration focuses on the intersection of deep learning and quantum computing, aiming to develop robust algorithms that leverage quantum hardware to accelerate neural network training and enhance predictive modeling in complex physical systems.</p>
+<h2>IBM: Quantum Finance Breakthroughs</h2>
+<p>IBM researchers have achieved a significant milestone by integrating deep learning models with quantum computing architectures to optimize financial risk assessment. By leveraging quantum-enhanced feature maps, these models demonstrate superior pattern recognition in high-dimensional market data, outperforming classical neural networks in volatility forecasting and portfolio optimization tasks.</p>
 </article>
 <article>
-<h2>IBM & BMO: Breakthrough in Quantum Finance</h2>
-<p>IBM and BMO Financial Group have reported a major milestone in quantum machine learning applied to the financial sector. By utilizing advanced quantum kernels, the team successfully demonstrated a machine-learning model capable of pricing complex financial derivatives with greater efficiency than classical counterparts, signaling a shift in how institutions approach risk assessment and market volatility.</p>
+<h2>Scaling AI-Enabled Coding</h2>
+<p>The landscape of software development is shifting as new scaling laws for code-generation models emerge. Recent advancements focus on training models on massive, curated repositories, allowing for improved reasoning in complex architectural tasks. These AI-enabled systems are now capable of managing end-to-end refactoring, reducing technical debt, and accelerating deployment cycles in enterprise-grade environments.</p>
 </article>
 <article>
 <h2>Industry Briefs</h2>
 <ul>
-<li><strong>Neural Architecture Search:</strong> New methods for automated model design are reducing energy consumption by 30%.</li>
-<li><strong>LLM Efficiency:</strong> Recent papers suggest "sparse attention" mechanisms are outperforming dense models in long-context tasks.</li>
+<li><strong>Model Efficiency:</strong> New quantization techniques reducing inference latency by 40%.</li>
+<li><strong>Ethics:</strong> New frameworks for auditing bias in large-scale generative models.</li>
+<li><strong>Hardware:</strong> Next-gen GPU clusters optimized for transformer-based architectures.</li>
 </ul>
 </article>
 </main>
-<footer>&copy; 2023 Deep Learning Weekly | Curated for the AI Research Community</footer>
+<footer>&copy; 2023 Deep Learning Weekly | Stay Informed.</footer>
 <script>
 console.log("Deep Learning Weekly loaded successfully.");
-document.querySelectorAll('article').forEach(el => {
-el.style.transition = 'transform 0.2s';
-el.onmouseover = () => el.style.transform = 'scale(1.01)';
-el.onmouseout = () => el.style.transform = 'scale(1)';
+document.querySelectorAll('h2').forEach(el => {
+el.addEventListener('mouseover', () => el.style.color = '#d35400');
+el.addEventListener('mouseout', () => el.style.color = '#e67e22');
 });
 </script>
 </body>
